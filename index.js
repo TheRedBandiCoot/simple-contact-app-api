@@ -16,4 +16,5 @@ app.get('/api/users', (req, res) => {
   res.send(data);
 });
 
-module.exports.handler = serverless(app);
+module.exports.app = app; // export the app
+module.exports.handler = serverless(app); // export the handler function
