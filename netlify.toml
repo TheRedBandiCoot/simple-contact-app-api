@@ -1,6 +1,5 @@
 [functions]
-functions = "netlify/functions"
-
+  functions = "netlify/functions"
   node_bundler = "esbuild"
   external_node_modules = ["express"]
 
