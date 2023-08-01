@@ -17,5 +17,5 @@ router.get('/users', (req, res) => {
   res.send(data);
 });
 
-app.use('/api/', router);
+app.use('/', router);
 module.exports.handler = serverless(app); // export the handler function
