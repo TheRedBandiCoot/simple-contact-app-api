@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
   );
 });
 
-router.get('/users', (req, res) => {
+router.get('/api/users', (req, res) => {
   res.send(data);
 });
 
