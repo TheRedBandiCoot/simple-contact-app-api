@@ -6,6 +6,7 @@ const serverless = require('serverless-http');
 const router = express.Router();
 
 app.use(cors());
+app.use('/', router);
 
 router.get('/', (req, res) => {
   res.send(
@@ -17,5 +18,6 @@ router.get('/api/users', (req, res) => {
   res.send(data);
 });
 
-app.use('/', router);
+app.listen(5000);
+
 module.exports.handler = serverless(app); // export the handler function
