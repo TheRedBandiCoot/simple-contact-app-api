@@ -28,3 +28,4 @@ package-lock.json
 .netlify
 # ingore test file
 app.js
+data.txt
